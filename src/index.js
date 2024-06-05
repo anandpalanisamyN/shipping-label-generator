@@ -18,7 +18,7 @@ async function createPDF(customerName, deliveryLocation, materialCode, currentCa
       size: [283.465, 212.6],
       margins: { bottom: 2, top: 2, right: 2, left: 2 },
     });
-    
+
     const chunks = [];
     doc.on("data", (chunk) => chunks.push(chunk));
     doc.on("end", () => resolve(Buffer.concat(chunks)));
@@ -30,8 +30,8 @@ async function createPDF(customerName, deliveryLocation, materialCode, currentCa
       .stroke()
       .rect(12, 12, 259.4, 198.6)
       .stroke();
-    
-    doc.image("./logo.png", 40, 15, {
+
+    doc.image("./assets/logo.png", 40, 15, {
       width: 200,
       height: 50,
       align: "center",
