@@ -1,0 +1,22 @@
+{
+  "name": "ms-lemmings",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "nodemon": "^3.1.2",
+    "pdf-lib": "^1.17.1",
+    "pdfkit": "^0.15.0",
+    "qrcode": "^1.5.3"
+  }
+}
